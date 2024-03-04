@@ -45,7 +45,7 @@ public class EncodingFilter extends HttpFilter implements Filter {
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		System.out.println("Encoding doFilter()");
+//		System.out.println("Encoding doFilter()");
 		request.setCharacterEncoding(charset);
 		chain.doFilter(request, response);
 	}
